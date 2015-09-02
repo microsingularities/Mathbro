@@ -1,0 +1,68 @@
+module One where
+
+import Data.List
+
+x = 100
+
+lolo = 34
+
+namaDepan = "Jojopelata"
+
+sqr x = x * x * x * x
+
+gaya m a = a * m
+
+v x = sqr x * (x-100)
+
+kuadrat x = x * x
+
+cube x = (lolo + sqr x) * v x + (x-42634620)
+
+loop y = (y * lolo) - lolo + y
+jejesoekarno = lolo
+
+sesuatu x = cube x + sqr x * (jejesoekarno^2) - kuadrat lolo
+
+cobacoba = sesuatu x + jejesoekarno^2 - lolo^2
+
+akurasi x = pi * cobacoba
+
+ghost x = cobacoba > 1
+
+angle x = ghost x
+
+pitagor a b = sqrt (a^2 + b^2)
+
+mutlak x =
+    if x >= 0 && (x /= 5)
+    then x
+    else (- x)
+
+mutlak' x
+    | x >= 0 = x
+    | x < 0 = (- x)
+
+mutlak'' x
+      | x >= 0 = x
+      | otherwise = (- x)
+
+mutlak''' x
+    | x >= 0  = x
+    | True = (- x)
+
+ngasal x y
+    | x == y = "sama"
+    | x <= y = "kecil"
+    | x >= y = "gede"
+    | otherwise = "ngasal"
+
+-- 2 < x < 5 =>
+
+faktorial n
+    | n <= 1 = 1
+    | otherwise = n * (faktorial (n-1))
+
+rekurRekuran x
+    | x == 0 = "yeeeiii"
+    | x , (- 10) = "yeeoooo"
+    | otherwise = rekurLengkap (x-1)
